@@ -1,16 +1,18 @@
-.projects-list .title{
-    font-weight: 700;
-    font-size: 18px;
-    line-height: 2;
-    letter-spacing: 0.06em;
-    text-transform: none;
-}
+.projects-list{ 
+    .title{
+        font-weight: 700;
+        font-size: 18px;
+        line-height: 2;
+        letter-spacing: 0.06em;
+        text-transform: none;
+    }
 
-.projects-list .text{
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 1.87;
-    letter-spacing: 0.03em;
+    .text{
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 1.87;
+        letter-spacing: 0.03em;
+    }
 }
 
 .buttons-list{
@@ -42,6 +44,12 @@
     border: 1px solid #EEEEEE;
     width: 370px;
     transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    
+    &:hover,
+    &:focus{
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+    }
+
 }
 
 .project-item-img{
@@ -59,18 +67,13 @@
     background-color: rgba(33, 150, 243, 0.9);
     transform: translatey(101%);
     transition: transform 250ms ease;
-}
 
-.overlay .text{
-    font-size: 18px;
-    line-height: 1.56;
-    letter-spacing: 0.03em;
-    color: $bgc3-color;
-}
-
-.project-item:hover,
-.project-item:focus{
-box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+    .text{
+        font-size: 18px;
+        line-height: 1.56;
+        letter-spacing: 0.03em;
+        color: $bgc3-color;
+    }
 }
 
 .portfolio-link:hover .overlay,
@@ -78,25 +81,26 @@ box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1p
     transform: translatex(0);
 }
 
-.project-cards:nth-child(3n){
-    margin-right: 0;
-}
-
-.project-cards:nth-last-child(-n + 3){
-    margin-bottom: 0;
-}
 
 .project-cards{
     margin-right: 30px;
     margin-bottom: 30px;
+
+    &:nth-child(3n){
+        margin-right: 0;
+    }
+    
+    &:nth-last-child(-n + 3){
+        margin-bottom: 0;
+    }
 }
 
 .project-description{
     padding: 20px 24px;
-}
 
-.project-description .title,
-.project-description .text{
+    .title,
+    .text{
     margin-top: 0;
     margin-bottom: 0;
+    }
 }

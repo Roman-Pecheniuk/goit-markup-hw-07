@@ -1,22 +1,22 @@
 .work{
     padding-top: 0;
+    .item:not(:last-child){
+        margin-right: 30px;
+    }
+    .item{
+        position: relative;
+    }
+    .item{
+        position: relative;
+    }
+    .title{
+        color: #ffffff;
+        text-transform: uppercase;
+    }
 }
 
 .work-list{
     display: flex;
-}
-
-.work .item:not(:last-child){
-    margin-right: 30px;
-}
-
-.work .item{
-    position: relative;
-}
-
-.work .title{
-    color: #ffffff;
-    text-transform: uppercase;
 }
 
 .work-description{
